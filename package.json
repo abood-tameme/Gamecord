@@ -1,0 +1,16 @@
+{
+  "name": "@allzone/gamecord",
+  "version": "1.0.0",
+  "description": "Discord Game",
+  "main": "index.js",
+  "author": "AllZone Team",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.12.0",
+    "html-entities": "^2.3.3",
+    "node-fetch": "^2.6.7"
+  },
+  "directories": {
+    "src": "src"
+  }
+}
