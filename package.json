@@ -1,9 +1,9 @@
 {
-  "name": "@allzone/gamecord",
+  "name": "@aboodtameme/gamecord",
   "version": "1.0.0",
   "description": "Discord Game",
   "main": "index.js",
-  "author": "AllZone Team",
+  "author": "aboodtameme",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^13.12.0",
