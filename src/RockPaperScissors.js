@@ -156,10 +156,12 @@ module.exports = class RPSGame extends approve {
     .setColor(this.options.embed.color)
     .setTitle(this.options.embed.title)
     .setFooter({ text: this.message.author.tag + ' vs ' + this.opponent.tag })
-    .setDescription(formatMessage(this.options, result+'Message', !this.player1Won()))
-    .addFields({ name: this.message.author.username, value: this.playerPick ?? '❔', inline: true })
-    .addFields({ name: 'VS', value: '⚡', inline: true })
-    .addFields({ name: this.opponent.username, value: this.opponentPick ?? '❔', inline: true })
+    .setDescription(`${this.message.author.username} قام باختيار : ${this.playerPick ?? '❔'}
+${this.opponent.username} قام باختيار : ${this.opponentPick ?? '❔'}
+${formatMessage(this.options, result+'Message', !this.player1Won())}`)
+    //.addFields({ name: this.message.author.username, value: this.playerPick ?? '❔', inline: true })
+    //.addFields({ name: 'VS', value: '⚡', inline: true })
+    //.addFields({ name: this.opponent.username, value: this.opponentPick ?? '❔', inline: true })
     
     return msg.edit({ embeds: [embed], components: [] });
   }
